@@ -22,17 +22,6 @@ class Solution {
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {
 
-        int[] newArray = new int[m + n];
-        for (int i = 0; i < m+n; i++) {
-            if (i < m) {
-                newArray[i] = nums1[i];
-            } else {
-                newArray[i]=0;
-            }
-        }
-
-        nums1=newArray;
-
         if (m == 0) {
             System.arraycopy(nums2, 0, nums1, 0, n);
             return;

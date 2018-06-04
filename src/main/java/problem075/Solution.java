@@ -1,4 +1,4 @@
-package problem75;
+package problem075;
 
 /*
 75.分类颜色

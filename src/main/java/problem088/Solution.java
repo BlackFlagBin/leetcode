@@ -1,4 +1,4 @@
-package problem88;
+package problem088;
 
 /*
 88. 合并两个有序数组

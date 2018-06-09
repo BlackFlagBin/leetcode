@@ -19,12 +19,14 @@ package problem219;
 输出: false
  */
 
+import java.util.ArrayList;
 import java.util.HashSet;
 
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         //滑动窗口,保持set中的元素个数为k
         HashSet<Integer> set = new HashSet<>();
+
         for (int i = 0; i < nums.length; i++) {
             if (set.contains(nums[i])) {
                 return true;

@@ -44,7 +44,7 @@ class Solution {
             return resultList;
         }
 
-        queue.push(new NodeLevelPair<>(root, 0));
+        queue.offer(new NodeLevelPair<>(root, 0));
         while (!queue.isEmpty()) {
             NodeLevelPair<TreeNode, Integer> pair = queue.poll();
             TreeNode node = pair.fst;

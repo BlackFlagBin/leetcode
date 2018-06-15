@@ -34,7 +34,7 @@ class Solution {
             Pair<Integer, Integer> headPair = queue.poll();
             Integer num = headPair.first;
             Integer step = headPair.second;
-            for (int i = 0; ; i++) {
+            for (int i = 1; ; i++) {
 
                 int a = num - i * i;
                 if (a < 0) {

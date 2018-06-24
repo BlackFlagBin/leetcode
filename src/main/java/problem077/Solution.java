@@ -42,7 +42,7 @@ class Solution {
             result.add(new ArrayList<>(list));
             return;
         }
-        for (int i = start; i <= n; i++) {
+        for (int i = start; i <= n-(k-list.size())+1; i++) {
             list.add(i);
             combination(n, k, i + 1, list);
             list.remove(list.size() - 1);
